@@ -44,3 +44,46 @@ Contributions are welcome! If you have suggestions for improvements or want to a
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+# Analisador de Padrões Diários
+
+## Descrição
+
+O **Analisador de Padrões Diários** é um projeto projetado para identificar e analisar padrões recorrentes no desempenho das ações com base em diferentes dias da semana. O algoritmo examina dados históricos do mercado para determinar se existem tendências ou anomalias consistentes específicas para certos dias, como segundas-feiras, terças-feiras, quartas-feiras, quintas-feiras e sextas-feiras.
+
+## Funcionalidades
+
+- **Importação de Dados**: Recupera dados históricos das ações utilizando a biblioteca MetaTrader5.
+- **Análise de Padrões**: Avalia o desempenho das ações para cada dia da semana.
+- **Tratamento de Outliers**: Filtra outliers para garantir uma detecção de padrões mais precisa.
+- **Visualização e Exportação**: Consolida os resultados em um DataFrame e exporta para um arquivo Excel para fácil análise e revisão.
+
+## Fluxo de Trabalho
+
+1. **Importar Bibliotecas**: Carrega as bibliotecas necessárias para processamento e manipulação de dados.
+2. **Criar Lista de Ativos**: Especifica os ativos a serem analisados, podendo ser personalizados para incluir diferentes ações ou índices.
+3. **Definir Data Inicial**: Estabelece a data inicial para analisar os dados históricos.
+4. **Calcular Resultados**: Implementa uma função para:
+   - Inicializar a conexão com o MetaTrader5.
+   - Recuperar dados históricos para os períodos de tempo especificados.
+   - Calcular métricas de desempenho para cada dia da semana.
+   - Remover outliers para melhorar a precisão dos padrões.
+   - Agregar dados por dia da semana e calcular estatísticas relevantes.
+5. **Processar Dados**: Executa a função de cálculo para todos os ativos e períodos de tempo selecionados, consolidando os resultados.
+6. **Exportar Resultados**: Exporta os dados analisados para um arquivo Excel para inspeção e análise detalhadas.
+
+## Uso
+
+1. **Instalar Dependências**: Certifique-se de que todas as bibliotecas necessárias estejam instaladas.
+2. **Definir Lista de Ativos**: Configure a lista de ativos que deseja analisar, incluindo ações ou índices específicos.
+3. **Executar o Código**: Execute o script para analisar os padrões de desempenho para cada dia da semana.
+4. **Visualizar e Exportar Resultados**: Os resultados serão compilados e exportados para um arquivo Excel para revisão detalhada.
+
+## Contribuições
+
+Contribuições são bem-vindas! Se você tiver sugestões para melhorias ou quiser adicionar novos recursos, por favor, abra um problema ou envie um pull request.
+
+## Licença
+
+Este projeto está licenciado sob a [Licença MIT](LICENSE).
+
